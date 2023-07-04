@@ -1,0 +1,10 @@
+*{
+    font-family: 'Figtree', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #5271a1, #3e67ab, #2a5db3, #1751ba, #0e44be);
+    text-align: center;
+    color: aliceblue;
+}
+
