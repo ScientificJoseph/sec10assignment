@@ -73,6 +73,6 @@ const practical = new PracticalCourse('English',40, 2, 30, 'Bertha')
 practical.calc = this.price
 practical.render()
 
-const theoretical = new TheoreticalCourse('Agriculture', 20 ,-5, 'Simon')
+const theoretical = new TheoreticalCourse('Agriculture', 20 ,5, 'Simon')
 theoretical.calc = this.price
 theoretical.publish()
