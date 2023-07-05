@@ -8,7 +8,7 @@ class Course {
 
     get calc(){
         const sum = this.length / this.price
-        return `I'll get ${sum} credits and will take ${this.length} days.`
+        return `That class has ${sum} credits and will take ${this.length} days.`
     }
 
     set calc(val){
@@ -47,7 +47,7 @@ class PracticalCourse extends Course {
         this.name = name
     }
     render(){
-        console.log(`${this.name}, there will be ${this.numOfExercises} assignments. ${this.calc}`)
+        console.log(`${this.name}, ${this.title} has ${this.numOfExercises} assignments. ${this.calc}`)
 
     }
 }
@@ -58,7 +58,7 @@ class TheoreticalCourse extends Course {
         this.name = name
     }
     publish() {
-        console.log(`${this.name}, Booker T Washington said ${this.title} is the way forward. ${this.calc}.`)
+        console.log(`${this.name}, Booker T Washington said ${this.title} is the way forward. ${this.calc}`)
     }
 }
 
@@ -69,9 +69,7 @@ practical.calc = this.price
 practical.render()
 
 
-
-
-const theoretical = new TheoreticalCourse('Agriculture', 20 , -6, 'Simon')
+const theoretical = new TheoreticalCourse('Agriculture', 20 , 5, 'Simon')
 theoretical.calc = this.price
 theoretical.publish()
 
