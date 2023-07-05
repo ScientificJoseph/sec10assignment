@@ -17,7 +17,6 @@ class Course {
             console.log(`You don't have enough to take ${this.title} this semester` )
             this.price = 5            
             return
-
         }
     }
     
@@ -48,7 +47,6 @@ class PracticalCourse extends Course {
     }
     render(){
         console.log(`${this.name}, ${this.title} has ${this.numOfExercises} assignments. ${this.calc}`)
-
     }
 }
 
@@ -62,15 +60,11 @@ class TheoreticalCourse extends Course {
     }
 }
 
-
 // offerings.render()
 const practical = new PracticalCourse('English',40, 2, 30, 'Bertha')
 practical.calc = this.price
 practical.render()
 
-
 const theoretical = new TheoreticalCourse('Agriculture', 20 , 5, 'Simon')
 theoretical.calc = this.price
 theoretical.publish()
-
-
